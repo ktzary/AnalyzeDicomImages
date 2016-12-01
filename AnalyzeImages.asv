@@ -57,15 +57,4 @@ areaInCm = pixelsToCentimeters(Pixelcount, Centimeters);
 osirixCm = input('What was the area calculated in Osirix for this image?');
 Difference = percentDif(areaInCm, osirixCm);
 
-%% Export Results
 
-% Two images are exported, the original image and the black and white scale
-% mask image
-
-imwrite(Image,'processedImages.tif');
-imwrite(processedImage, 'processedImages.tif','WriteMode','append');
-
-% All numeric results are exported in a csv file with variable names
-
-diffTable = table(areaInCm, osirixCm, Difference);
-writetable(diffTable,'Calc_Results.csv');

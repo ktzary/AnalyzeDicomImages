@@ -13,6 +13,8 @@ Difference = 1;
 
 % Next determine which number is the smallest and which is the largest and
 % calculate the percent difference
+% Percent difference is always set to be calculated based on the smaller of
+% the 2 numbers
 if Num1 > Num2
     smallest = Num2;
     largest = Num1;
@@ -24,5 +26,5 @@ elseif Num1 < Num2
 elseif Num1 == Num2;
     Difference = 0;
 else
-    disp('Error has occurred, please check your inputs');
+    disp('Error has occurred, please check your inputs to the percentDif');
 end
