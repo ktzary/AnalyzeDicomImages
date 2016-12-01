@@ -26,5 +26,5 @@ elseif Num1 < Num2
 elseif Num1 == Num2;
     Difference = 0;
 else
-    disp('Error has occurred, please check your inputs to the percentDif');
+    disp('Error has occurred, please check your inputs to the percentDif function');
 end

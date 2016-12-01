@@ -37,7 +37,7 @@ maskImage = Image;
 % A mask of the image makes it black and white for easier processing
 maskImage(processedImage) = 0;
 
-%% Number of Pixels in ROI
+%% Calculate Pixels in ROI
 
 % Any pixel that is at least 50% within the ROI is counted and the total
 % number of pixels within the ROI is calculated

@@ -3,6 +3,8 @@ function [Area] = pixelsToCentimeters(totalPixels, ImageCalcLength)
 % This function is to convert the area in pixels to an equivalent area in
 % centimeters. 
 %
+% This script currently only supports measured centimeters of 2 and 2.5
+%
 % Inputs: total Pixels in ROI, pixels per CM based on 1050 X 1400 image
 %
 % Outputs: Area in centimeters
